@@ -33,7 +33,7 @@ export default class ScriptCheckerService {
 
     const injectionUrl = document.createElement('a');
     injectionUrl.href = this.baseInjectionUrl;
-    debugger
+
     if (tabUrl.hostname === injectionUrl.hostname) {
       console.log("URL match, inject");
       chrome.tabs.get(tabId, () => {
